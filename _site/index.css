@@ -1,0 +1,424 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+table {
+  width: 100%;
+  margin: 30px 0px;
+}
+
+thead {
+  border-bottom: 1px solid #007fff;
+}
+
+td {
+  border: 1px solid #007fff;
+  padding-left: 5px;
+}
+
+.page-icon,
+.nav-icon {
+  font-size: 35px;
+  margin: 0px 15px;
+}
+
+.blog-bar {
+  width: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.blog-bar i {
+  font-size: 30px;
+}
+
+hr {
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.page-title {
+  text-align: center;
+  color: #fff;
+  font-size: 7vmin;
+  margin: auto;
+  padding: 10px;
+  background: #000;
+}
+
+.page-background {
+  width: 100%;
+  height: 100%;
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.page-icon,
+.page-button {
+  color: #007fff;
+}
+
+.page-icon:hover,
+.page-button:hover {
+  color: #0176eb;
+  border: none;
+}
+
+.page-button {
+  background: #007fff;
+}
+
+.page-button:hover {
+  background: #0176eb;
+}
+
+.page-button {
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  width: 160px;
+  font-size: 14px;
+  border: none;
+}
+
+.page-button:hover,
+.page-button:focus {
+  color: #fff;
+  border: none;
+}
+
+.blog-card img {
+  max-height: 250px;
+  margin: auto;
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.post-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.method-list {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+
+.post-title a {
+  font-size: 3vmin;
+  color: #000;
+}
+
+.post-title a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.animated-title {
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+  background: #fff;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 10vmin !important;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div h1 {
+  font-size: 10vmin !important;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div h1 {
+  padding-left: 20px;
+}
+.animated-title > div.text-bottom div h2 {
+  padding-left: 20px;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+i .tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+i:hover .tooltip {
+  visibility: visible;
+}
+
+.navbar {
+  z-index: 50000;
+  background: #007fff;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.section {
+  height: calc(100vh - 65px);
+}
+
+.dropdown-menu,
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item {
+  background-color: #007fff !important;
+  color: #000 !important;
+}
+
+.navbar-nav .dropdown-menu {
+  border: none;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+.contact-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.school-img {
+  width: 150px;
+  height: 150px;
+}
+.maps {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.maps iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer {
+  background-color: #007fff;
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 2000;
+}
+
+.share-bar {
+  width: 200px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.share-bar i {
+  font-size: 30px;
+}
+
+.big-link {
+  font-size: 4vmin;
+}
+
+.blog-card,
+.blog-helper {
+  background: #fff;
+  color: #333;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-header {
+  color: #fff !important;
+}
+
+.blog-helper {
+  height: inherit;
+}
+
+.blog-helper img {
+  margin: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.nav-icon {
+  color: #fff;
+}
+
+.blog-helper h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.pagination-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  padding: 45px 45px 100px;
+}
+
+.pagination-container div {
+  grid-column: span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previous,
+.next {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.previous span {
+  margin-left: 10px;
+}
+
+.next span {
+  margin-right: 10px;
+  text-align: right;
+}
+
+.color-change {
+  -webkit-animation: color-change 10s linear infinite alternate both;
+  animation: color-change 10s linear infinite alternate both;
+}
+
+.color-change-border {
+  -webkit-animation: color-change-border 10s linear infinite alternate both;
+  animation: color-change-border 1s linear infinite alternate both;
+}
+.d-lg-block {
+  height: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.text-bottom div span {
+  font-size: 8vmin;
+}
+
+.method-info {
+  min-height: 250px;
+}
+
+#method i {
+  font-size: 25px;
+  animation: color-change 10s linear infinite alternate both;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .grid-card {
+    grid-column: span 3;
+  }
+  .method-list {
+    flex-direction: column;
+  }
+  #about .animated-title {
+    width: 60vmin;
+  }
+  .blog-card,
+  .blog-helper {
+    margin: 10px;
+    padding: 10px;
+  }
+  .post-title a {
+    font-size: 6vmin;
+  }
+  .share-bar,
+  .blog-bar {
+    width: auto;
+    justify-content: space-evenly;
+    font-size: 13px;
+  }
+
+  .page-icon,
+  .nav-icon {
+    font-size: 25px;
+    margin: 0px 7px;
+  }
+  .pagination-container {
+    padding: 25px 10px 100px;
+    font-size: 14px;
+  }
+
+  .grid {
+    grid-column-gap: 10px;
+  }
+}

@@ -1,0 +1,32 @@
+---
+layout: default
+title: "Inicio"
+---
+<h1 class="page-title">Mtro. Diego Delgadillo</h1>
+<div class="page-background">
+    <section class="col-12 col-md-8 pl-md-5" itemscope itemtype="http://schema.org/Blog">
+        {% for post in site.posts %}
+        <article class="blog-card" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <meta itemprop="name" content="{{post.title}}" />
+            <meta itemprop="image" content="{{post.image}}" />
+            <h3 class="post-title" itemprop="headline"><a href="{{post.url}}">{{post.title}}</a></h2>
+                <p itemprop="description">{{post.excerpt | strip_html}}</p>
+                <span class="d-none" itemprop="datePublished">{{post.date| date_to_string}}</span>
+                <a href="{{post.url}}"><button class="page-button">Continuar Leyendo</button></a>
+                <hr />
+        </article>
+        {% endfor %}
+    </section>
+    <div class="col-12 col-md-4 pr-md-5 p-0">
+        <div class="blog-helper">
+            <img class="contact-img" src="./assets/authors/diego.jpg" alt="Mtro. Diego Delgadillo" />
+            <h2 rel="author">Mtro. Diego Delgadillo</h2>
+            <p>Profesor de tiempo completo en la Universidad de Guadalajara.<br />
+                Lic. en Negocios Internacionales<br />
+                Maestría en Gestión y Políticas de la Educación Superior.<br />
+                Profesor del Centro Universitario de Ciencias Economico Administrativas.<br />
+                Profesor de Lenguas Extranjeras en la Escuela Politecnica Ing. Jorge Matute Remus.</p>
+            <br>
+        </div>
+    </div>
+</div>

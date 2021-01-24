@@ -1,0 +1,24 @@
+gems:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+paginate: 6
+paginate_path: blog/page:num/
+permalink: /:title/
+
+plugins: [jekyll-paginate]
+
+google_ad_client: ca-pub-3938357594478752
+
+authors:
+  diego:
+    name: Diego Delgadillo
+    image: /assets/authors/diego.jpg
+    bio:
+      Profesor de tiempo completo en la Universidad de Guadalajara.<br/>
+      Lic. en Negocios Internacionales.<br/>
+      Maestría en Gestión y Políticas de la Educacion Superior.<br/>
+      Profesor del Centro Universitario de Ciencias Economico Administrativas.<br/>
+      Profesor de Lenguas Extranjeras en la Escuela Politecnica Ing. Jorge Matute Remus.
+theme: jekyll-theme-cayman

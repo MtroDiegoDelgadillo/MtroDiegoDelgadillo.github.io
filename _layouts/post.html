@@ -1,0 +1,57 @@
+---
+layout: default
+---
+{% assign author = site.authors[page.author] %}
+<h2 class="page-title">{{page.title}}</h2>
+<div class="page-background">
+    <div class="col-12 col-md-8 pl-md-5 p-0">
+        <article class="blog-card" itemscope itemtype="http://schema.org/BlogPosting">
+            <meta itemprop="name" content="{{page.title}}" />
+            <meta itemprop="image" content="{{page.image}}" />
+            <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <meta itemprop="name" content="Ludoteca Digital">
+            </div>
+            <div itemprop="articleBody">{{content}}</div>
+            <br />
+            <hr />
+            <div class="share-bar">
+                <span>Compartir:</span>
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{page.url}}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i
+                        class="page-icon fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/share?text={{post.title}}&amp;url={{ site.url }}{{page.url}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i
+                        class="page-icon fab fa-twitter-square"></i></a>
+            </div>
+            <hr />
+            <div>
+                Fecha: <span itemprop="datePublished"> {{page.date | date_to_string}}</span> - Escrito por:
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name" class="author-name"> {{author.name}}</span>
+                </span>
+            </div>
+            <hr />
+            <p>Contin&uacute;a leyendo con nosotros. Podr&iacute;an interesarte los siguientes
+                art&iacute;culos:</p>
+            <div class="action-bar">
+                {% if page.previous %}
+                <div class="col-4 px-0">
+                    <h2><a class="big-link" href="{{page.previous.url}}">{{page.previous.title}}</a></h2>
+                </div>
+                {% endif %} {% if page.next %}
+                <div class="col-4 px-0">
+                    <h2><a class="big-link" href="{{page.next.url}}">{{page.next.title}}</a></h2>
+                </div>
+                {% endif %}
+            </div>
+        </article>
+    </div>
+    <div class="col-12 col-md-4 pr-md-5 p-0">
+        <div class="blog-helper">
+            <img class="contact-img" src="{{author.image}}" alt="{{author.name}}" />
+            <h2 rel="author">{{author.name}}</h2>
+            <p>{{author.bio}}</p>
+            <br>
+        </div>
+    </div>
+</div>
