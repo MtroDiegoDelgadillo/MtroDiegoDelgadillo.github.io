@@ -3,8 +3,11 @@ layout: post
 title: 'Simple Present vs. Present Continous'
 categories: [articulo]
 author: diego
+excerpt_separator: <!--more-->
 ---
 En el idioma Inglés existen distintos tiempos gramaticales, cada uno de ellos tiene sus propios usos y diferencias. En esta ocasión revisaremos los usos de Simple Present y Present Continous, asi como su contraste.
+
+<!--more-->
 
 ## Simple Present
 

@@ -3,8 +3,11 @@ layout: post
 title: 'Conditionals'
 categories: [articulo]
 author: diego
+excerpt_separator: <!--more-->
 ---
-Los condicionales se emplean para especular acerca de lo que podría ocurrir, lo que puede haber ocurrido y lo que desearíamos que ocurriese. En inglés, la mayoría de las oraciones que emplean el tiempo verbal condicional contienen el término "if". Muchas de las construcciones condicionales del inglés se utilizan en oraciones que incluyen verbos en pasado.
+Los condicionales se emplean para especular acerca de lo que podría ocurrir, lo que puede haber ocurrido y lo que desearíamos que ocurriese. En Inglés, la mayoría de las oraciones que emplean el tiempo verbal condicional contienen el término "if". Muchas de las construcciones condicionales del Inglés se utilizan en oraciones que incluyen verbos en pasado.
+
+<!--more-->
 
 Este uso se denomina "el pasado irreal" porque empleamos un tiempo verbal de pasado pero no estamos refiriéndonos a algo que haya sucedido realmente. Hay cinco formas principales de construir oraciones condicionales en inglés. En todos los casos, se componen de una proposición o cláusula con "if" y una proposición principal. En muchas oraciones condicionales negativas existe una construcción alternativa equivalente que usa "unless" en lugar de "if".
 
